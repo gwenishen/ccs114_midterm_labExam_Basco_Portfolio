@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena Gwyneth Basco | Creative Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- External CSSheet Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">✨ Athena's Portfolio</a>
+            <button class="navbar-toggler border-0 shadow-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1) hue-rotate(180deg);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mission-vision">Mission/Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HOMEPAGE -->
+    <section id="home" class="nav-section">
+        <div class="section-container">
+            <div class="hero-jumbotron">
+                <img src="profile.png" alt="Athena Gwyneth Basco" class="hero-avatar" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+                <h1 class="display-4 fw-bold">Hello, I'm Athena Gwyneth Basco</h1>
+                <p class="lead my-3">2BSIT - B | 2nd Year BSIT Student at Pamantasan ng Cabuyao (PNC)</p>
+                
+                <div class="alert alert-dismissible fade show w-75 mx-auto mt-4 border-0 shadow-sm" role="alert">
+                    ✦ <strong>Thanks for dropping by!</strong> Scroll down to explore my background, projects, and vision.
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#about" class="btn btn-custom-cyan btn-lg m-2">Explore Portfolio</a>
+                    <button type="button" class="btn btn-lg rounded-pill m-2" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                        Quick Bio Info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOMATIC TEXT TICKER BAR -->
+    <section class="ticker-section">
+        <div class="ticker-container">
+            <div class="ticker-track">
+                <div class="ticker-item">★ CCS 114</div>
+                <div class="ticker-item">★ 2nd Year BSIT Student</div>
+                <div class="ticker-item">★ Pamantasan ng Cabuyao (PNC)</div>
+                <div class="ticker-item">★ Midterm Portfolio</div>
+                <div class="ticker-item">★ Web Technology</div>
+                <div class="ticker-item">★ Laboratory Examination</div>
+                <div class="ticker-item">★ UI/UX & Web Design Enthusiast</div>
+                <div class="ticker-item">★ Midterm Projects</div>
+
+                <div class="ticker-item">★ CCS 114</div>
+                <div class="ticker-item">★ 2nd Year BSIT Student</div>
+                <div class="ticker-item">★ Pamantasan ng Cabuyao (PNC)</div>
+                <div class="ticker-item">★ Midterm Portfolio</div>
+                <div class="ticker-item">★ Web Technology</div>
+                <div class="ticker-item">★ Laboratory Examination</div>
+                <div class="ticker-item">★ UI/UX & Web Design Enthusiast</div>
+                <div class="ticker-item">★ Midterm Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section id="about" class="nav-section">
+        <div class="section-container">
+            <h2 class="text-center mb-2 fw-bold" style="color: #ffffff;">About Me</h2>
+            <p class="text-center mb-5" style="color: #a0d8e2;">Get to know a little more about my journey, age, and passion for web creation!</p>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="d-flex flex-column gap-3">
+                        <button type="button" id="tabBtn1" class="about-tab-btn active-tab" onclick="switchAboutTab(1)">
+                            <span class="fs-5">✨</span> 
+                            <div>
+                                <div class="fw-bold">Who Am I?</div>
+                                <small>Age, course, and university</small>
+                            </div>
+                        </button>
+
+                        <button type="button" id="tabBtn2" class="about-tab-btn" onclick="switchAboutTab(2)">
+                            <span class="fs-5">🎨</span> 
+                            <div>
+                                <div class="fw-bold">Designing vs. Coding</div>
+                                <small>Why I love building websites</small>
+                            </div>
+                        </button>
+
+                        <button type="button" id="tabBtn3" class="about-tab-btn" onclick="switchAboutTab(3)">
+                            <span class="fs-5">🌱</span> 
+                            <div>
+                                <div class="fw-bold">Still Growing</div>
+                                <small>Always learning and improving</small>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="about-content-display">
+                        <div id="aboutCardTitle" class="h4 fw-bold text-white mb-3">✨ Athena Gwyneth Basco</div>
+                        <div id="aboutCardBody" class="lh-lg" style="color: #a0d8e2 !important;">
+                            Hi there! I'm <strong>20 years old</strong> and currently a <strong>2nd-year student</strong> pursuing a Bachelor of Science in Information Technology at the College of Computing Studies, <strong>Pamantasan ng Cabuyao</strong>. I have fallen in love with web design and development, and I am always eager to learn new techniques and tools to enhance my skills. My journey in the world of technology is just beginning, and I am excited to see where it takes me!
+                        </div>
+                        <div id="aboutCardTags" class="d-flex flex-wrap gap-2 mt-4">
+                            <span class="badge badge-custom">20 Years Old</span>
+                            <span class="badge badge-custom">2nd Year BSIT</span>
+                            <span class="badge badge-custom">PNC CCS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ALTERNATING GALLERY -->
+    <section id="gallery" class="nav-section">
+        <div class="section-container">
+            <h2 class="text-center mb-4 fw-bold" style="color: #ffffff;">Personal Gallery</h2>
+            <p class="text-center mb-5" style="color: #a0d8e2;">A glimpse into my college life, favorite moments with friends, and the projects I've built along the way. Click any image to preview.</p>
+            
+            <div class="alternating-gallery-grid">
+                <div class="gallery-card pic-1" onclick="openPreview('1.jpg', 'Campus Life', 'Academic Collaboration', 'Capturing collaborative study sessions and group brainstorming with fellow IT students at Pamantasan ng Cabuyao during laboratory hours.', ['Study Session', 'PNC CCS', 'Group Work', 'August 2025'])">
+                    <img src="1.jpg" alt="Gallery Photo 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div class="gallery-card pic-2" onclick="openPreview('2.jpg', 'Projects', 'Team Project Workshop', 'Working closely on team-based applications and frontend development exercises for our major web tech laboratory requirements.', ['Frontend', 'Bootstrap 5', 'Collaboration', 'September 2025'])">
+                    <img src="2.jpg" alt="Gallery Photo 2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div class="gallery-card pic-3" onclick="openPreview('3.jpg', 'Programming', 'Coding & Development', 'Deep focus while building responsive layouts and debugging custom stylesheets for various web design and development concepts.', ['CodePen', 'CSS3', 'Debugging', 'October 2025'])">
+                    <img src="3.jpg" alt="Gallery Photo 3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div class="gallery-card pic-4" onclick="openPreview('4.jpg', 'Setup', 'Tech Workspace Setup', 'My clean workstation setup featuring modern tools, portable power banks, code editors, and resources used for daily academic assignments.', ['Workstation', 'Gadgets', 'Productivity', 'November 2025'])">
+                    <img src="4.jpg" alt="Gallery Photo 4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div class="gallery-card pic-5" onclick="openPreview('5.jpg', 'Design', 'UI/UX Wireframing', 'Designing intuitive user interfaces, mockups, and wireframe prototypes focused on exceptional user experience and clean aesthetics.', ['UI/UX', 'Wireframe', 'Prototypes', 'December 2025'])">
+                    <img src="5.jpg" alt="Gallery Photo 5" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div class="gallery-card pic-6" onclick="openPreview('6.jpg', 'Milestone', 'Student Milestone', 'Celebrating academic milestones and successful project completions within the College of Computing Studies at Pamantasan ng Cabuyao.', ['Achievement', 'PNC', 'BSIT', 'January 2026'])">
+                    <img src="6.jpg" alt="Gallery Photo 6" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MISSION / VISION -->
+    <section id="mission-vision" class="nav-section">
+        <div class="section-container">
+            <h2 class="text-center mb-5 fw-bold" style="color: #ffffff;">Pamantasan ng Cabuyao Vision & Mission</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <button type="button" id="visionBtn" class="mv-action-btn active-mv" onclick="showContent('vision')">
+                                University Vision
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" id="missionBtn" class="mv-action-btn" onclick="showContent('mission')">
+                                University Mission
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mv-large-display-box">
+                        <p id="mvTextContent" class="mb-0 fs-4 text-center lh-base">
+                            A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT ME -->
+    <section id="contact" class="nav-section">
+        <div class="section-container">
+            <h2 class="text-center mb-5 fw-bold" style="color: #ffffff;">Contact Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="contact-info-box shadow-sm">
+                        <h4 class="mb-4 text-white">Get in Touch</h4>
+                        <div class="contact-info-item">
+                            <h5>University Address</h5>
+                            <p>Pamantasan ng Cabuyao<br>Katapatan Mutual Homes, Brgy. Banay-banay, City of Cabuyao, Laguna 4025</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h5>Email Address</h5>
+                            <p>athenagwynethbasco@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h5>Mobile Number</h5>
+                            <p>09159310384</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="p-4 rounded-4 shadow-sm" style="background: linear-gradient(135deg, rgba(6, 30, 40, 0.85), rgba(2, 13, 17, 0.95)); border: 1px solid rgba(0, 242, 254, 0.35); border-radius: 50px 20px 50px 20px !important; padding: 45px !important; backdrop-filter: blur(25px);">
+                        <h4 class="mb-3 text-white">Send a Message</h4>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold" style="color: #a0d8e2;">Your Full Name</label>
+                            <input type="text" class="form-control rounded-pill p-3" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold" style="color: #a0d8e2;">Email Address</label>
+                            <input type="email" class="form-control rounded-pill p-3" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-semibold" style="color: #a0d8e2;">Message</label>
+                            <textarea class="form-control rounded-4 p-3" id="message" rows="4" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom-cyan btn-lg w-100 rounded-pill">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Athena Gwyneth Basco | CCS114 Midterm Laboratory Examination. Pamantasan ng Cabuyao.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 p-3 shadow-lg" style="background: rgba(3, 16, 22, 0.95); border: 1px solid rgba(0, 242, 254, 0.5) !important; border-radius: 40px 15px 40px 15px !important; color: #e0f4f7; backdrop-filter: blur(25px);">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-white">Student Profile Summary</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: #a0d8e2;">
+                    <p><strong>Name:</strong> Athena Gwyneth Basco</p>
+                    <p><strong>Age:</strong> 20 years old</p>
+                    <p><strong>Year Level:</strong> 2nd Year Student</p>
+                    <p><strong>Program:</strong> BS Information Technology (College of Computing Studies)</p>
+                    <p><strong>Institution:</strong> Pamantasan ng Cabuyao (PNC)</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-custom-cyan rounded-pill w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREVIEW MODAL -->
+    <div class="modal fade cyan-glossy-preview-modal" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="row g-0">
+                    <div class="col-lg-7">
+                        <div class="preview-img-container">
+                            <img id="previewModalImg" src="" alt="Gallery Preview" style="width: 100%; height: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="preview-content-pane">
+                            <div>
+                                <span id="previewCategory" class="preview-category-tag">Category</span>
+                                <h3 id="previewTitle" class="preview-heading">Title Header</h3>
+                                <p class="preview-section-title">History & Background</p>
+                                <p id="previewDescription" class="preview-description">Description goes here...</p>
+                                <div class="preview-tags-box">
+                                    <div class="preview-tags-title">
+                                        <span>🏷️ Details & Tags</span>
+                                    </div>
+                                    <div id="previewTagsList" class="preview-badge-list"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn-close-cyan-preview" data-bs-dismiss="modal">Close Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function switchAboutTab(tabNum) {
+            const btn1 = document.getElementById('tabBtn1');
+            const btn2 = document.getElementById('tabBtn2');
+            const btn3 = document.getElementById('tabBtn3');
+            const titleEl = document.getElementById('aboutCardTitle');
+            const bodyEl = document.getElementById('aboutCardBody');
+            const tagsEl = document.getElementById('aboutCardTags');
+
+            btn1.classList.remove('active-tab');
+            btn2.classList.remove('active-tab');
+            btn3.classList.remove('active-tab');
+
+            if (tabNum === 1) {
+                btn1.classList.add('active-tab');
+                titleEl.innerHTML = "✨ Athena Gwyneth Basco";
+                bodyEl.innerHTML = "Hi there! I'm <strong>20 years old</strong> and currently a <strong>2nd-year student</strong> pursuing a Bachelor of Science in Information Technology at the College of Computing Studies, <strong>Pamantasan ng Cabuyao</strong>. I love turning blank screens into gorgeous, interactive digital spaces!";
+                tagsEl.innerHTML = `
+                    <span class="badge badge-custom">20 Years Old</span>
+                    <span class="badge badge-custom">2nd Year BSIT</span>
+                    <span class="badge badge-custom">PNC CCS</span>
+                `;
+            } else if (tabNum === 2) {
+                btn2.classList.add('active-tab');
+                titleEl.innerHTML = "🎨 Designing over Programming";
+                bodyEl.innerHTML = "To be honest, while coding has its moments, I really am <strong>having so much fun making websites</strong> instead of traditional backend programming! Crafting layouts, styling buttons with glassmorphism, and watching UI components come to life brings me so much joy.";
+                tagsEl.innerHTML = `
+                    <span class="badge badge-custom">Web Design</span>
+                    <span class="badge badge-custom">UI/UX Layouts</span>
+                    <span class="badge badge-custom">CSS Styling</span>
+                `;
+            } else if (tabNum === 3) {
+                btn3.classList.add('active-tab');
+                titleEl.innerHTML = "✔ A Work in Progress";
+                bodyEl.innerHTML = "I know I'm <strong>still improving</strong> and <strong>still got a lot more to learn</strong> on this journey, but every project is a fun stepping stone. I'm excited to keep exploring new web tech tools and building cooler projects!";
+                tagsEl.innerHTML = `
+                    <span class="badge badge-custom">Continuous Learner</span>
+                    <span class="badge badge-custom">Web Tech</span>
+                    <span class="badge badge-custom">Growth Mindset</span>
+                `;
+            }
+        }
+
+        function showContent(type) {
+            const visionBtn = document.getElementById('visionBtn');
+            const missionBtn = document.getElementById('missionBtn');
+            const mvTextContent = document.getElementById('mvTextContent');
+
+            if (type === 'vision') {
+                visionBtn.classList.add('active-mv');
+                missionBtn.classList.remove('active-mv');
+                mvTextContent.innerText = "A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building.";
+            } else if (type === 'mission') {
+                missionBtn.classList.add('active-mv');
+                visionBtn.classList.remove('active-mv');
+                mvTextContent.innerText = "As an institution of higher learning, University of Cabuyao is committed to equip individuals with knowledge, skills and values that will enable them to achieve their professional goals and provide leadership and service for national development.";
+            }
+        }
+
+        function openPreview(imgSrc, category, title, description, tagsArray) {
+            document.getElementById('previewModalImg').src = imgSrc;
+            document.getElementById('previewCategory').innerText = category;
+            document.getElementById('previewTitle').innerText = title;
+            document.getElementById('previewDescription').innerText = description;
+            
+            const tagsListContainer = document.getElementById('previewTagsList');
+            tagsListContainer.innerHTML = '';
+            tagsArray.forEach(tag => {
+                const pill = document.createElement('span');
+                pill.className = 'preview-pill';
+                pill.innerText = tag;
+                tagsListContainer.appendChild(pill);
+            });
+
+            const previewModal = new bootstrap.Modal(document.getElementById('imagePreviewModal'));
+            previewModal.show();
+        }
+
+        // Dynamic Navbar Active Link Highlighting via IntersectionObserver
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".nav-section");
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+            const observerOptions = {
+                root: null,
+                rootMargin: "-20% 0px -70% 0px",
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        navLinks.forEach(link => {
+                            link.classList.remove("active");
+                            if (link.getAttribute("href") === `#${id}`) {
+                                link.classList.add("active");
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
